@@ -2,7 +2,7 @@ import torch
 import torch.nn.functional as F
 import numpy as np
 
-class FrequencyDecoupledGuidancePatcher:
+class FDGPatcher:
     """
     An implementation of Frequency-Decoupled Guidance (FDG) from the paper
     "Guidance in the Frequency Domain Enables High-Fidelity Sampling at Low CFG Scales"
@@ -160,8 +160,8 @@ class FrequencyDecoupledGuidancePatcher:
 
 
 NODE_CLASS_MAPPINGS = {
-    "FrequencyDecoupledGuidancePatcher": FrequencyDecoupledGuidancePatcher
+    "FrequencyDecoupledGuidance": FDGPatcher
 }
 NODE_DISPLAY_NAME_MAPPINGS = {
-    "FrequencyDecoupledGuidancePatcher": "FDG (Frequency Decoupled Guidance)"
+    "FrequencyDecoupledGuidance": "FDG (Frequency Decoupled Guidance)"
 }
