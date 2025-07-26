@@ -1,7 +1,7 @@
 [project]
 name = "ComfyUI_FDGuidance"
 description = 'An implementation of Frequency-Decoupled Guidance (FDG) in pure Pytorch.'
-version = "1.0.0"
+version = "1.0.1"
 license = { file = "LICENSE" }
 
 [project.urls]
