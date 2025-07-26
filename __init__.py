@@ -21,10 +21,10 @@ class FDGPatcher:
                 "model": ("MODEL",),
                 "enabled": ("BOOLEAN", {"default": True}),
                 "levels": ("INT", {"default": 4, "min": 1, "max": 8, "step": 1, "display": "slider"}),
-                "freq_guidance_high": ("FLOAT", {"default": 8.0, "min": 0.0, "max": 20.0, "step": 0.1, "display": "slider", "label": "High-Freq Guidance (w_high)"}),
-                "freq_guidance_low": ("FLOAT", {"default": 1.0, "min": 0.0, "max": 20.0, "step": 0.1, "display": "slider", "label": "Low-Freq Guidance (w_low)"}),
+                "freq_guidance_high": ("FLOAT", {"default": 8.0, "min": -20.0, "max": 20.0, "step": 0.1, "display": "slider", "label": "High-Freq Guidance (w_high)"}),
+                "freq_guidance_low": ("FLOAT", {"default": 1.0, "min": -20.0, "max": 20.0, "step": 0.1, "display": "slider", "label": "Low-Freq Guidance (w_low)"}),
                 "apply_apg_projection": ("BOOLEAN", {"default": False, "label_on": "Enabled", "label_off": "Disabled", "tooltip": "Apply Adaptive Projected Guidance (APG) to reduce oversaturation."}),
-                "parallel_weight": ("FLOAT", {"default": 1.0, "min": 0.0, "max": 4.0, "step": 0.05, "display": "slider", "tooltip": "Weight for the APG parallel component. Only used if APG is enabled."}),
+                "parallel_weight": ("FLOAT", {"default": 1.0, "min": -4.0, "max": 4.0, "step": 0.05, "display": "slider", "tooltip": "Weight for the APG parallel component. Only used if APG is enabled."}),
             },
         }
 
